@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* 전체영역 */
+#wrap {
+    width: 100%;
+    height: 100vh;
+}
+
+/* 헤더영역 */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    padding: 0 100px;
+    background-color: rgba(255, 255, 255, 0);
+}
+#header a h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: 48px;
+    color: red;
+}
+#header ul {
+    display: flex;
+    width: 80%;
+}
+#header ul li a{
+    font-size: 18px;
+    margin-right: 35px;
+}
+/* #header div {
+    
+} */
+#header div a {
+    font-size: 15px;
+}
+#header div a:first-child {
+    margin-right: 20px;
+}
+
+/* 메인이미지 영역 */
+#main_img {
+    width: 100%;
+    height: 800px;
+    background-color: rg;
+    background-image: url(/IMG/mainIMG.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#back_filter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    backdrop-filter: blur(70px);
+}
+#show_ex {
+    height: 300px;
+    /* background-color: green; */
+}
+#show_ex > img {
+    width: 300px;
+    margin-bottom: 15px;
+}
+#show_ex .tv_ex {
+    margin-bottom: 20px;
+}
+#show_ex .tv_ex span {
+    font-size: 14px;
+    padding: 3px;
+    margin-right: 6px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    color: #ccc;
+}
+#show_ex .tv_show {
+    display: flex;
+    margin-bottom: 20px;
+}
+#show_ex .tv_show a {
+    width: 230px;
+    height: 70px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 65px;
+    text-align: center;
+    background-color: #ccc;
+}
+#show_ex .tv_show .show_storage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+}
+#show_ex .tv_show .show_storage span {
+    font-size: 24px;
+    color: #ccc;
+}
+#show_ex .tv_show .show_storage span:first-child {
+    margin-bottom: 10px;
+}
+#show_ex .show_people p {
+    color: #ccc;
+}
+#back_filter .show_img img {
+    height: 470px;
+}
+
+/* 메인컨텐츠 */
